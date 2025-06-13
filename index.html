@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast App</title>
+  <!-- Facicon Link -->
+    <link rel="icon" href="D:\Weather app\fevico_weather.png" >
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-100 min-h-screen font-sans">
+     
+  <div class="container mx-auto py-8">
+    <h1 class="text-2xl text-center mb-10 bg-blue-700 text-white">Weather Dashboard</h1>
+
+    <!-- Search Section -->
+    <div class="flex flex-col md:flex-row gap-4 justify-center mb-6">
+      <input id="cityInput" type="text" placeholder="Enter city name" class="p-5 rounded-md border-4 w-full md:w-1/3">
+      <button id="searchBtn" class="bg-red-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md">Search</button>
+      <button id="locationBtn" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md">Use My Location</button>
+    </div>
+  
+    <!-- Recent Searches -->
+    <div id="recentSearches" class="text-center mb-4"></div>
+   
+    <!-- Weather Display -->
+    <div id="weatherDisplay" class="bg-blue-500 rounded-md text-center text-white"></div>
+
+    <div id="forecastDisplay" class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-6 "></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
